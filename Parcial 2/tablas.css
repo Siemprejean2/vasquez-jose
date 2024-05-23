@@ -1,0 +1,72 @@
+/* Estilo para las tablas */
+#transactions-table {
+    max-height: 300px; /* Define la altura máxima de la tabla */
+    overflow-y: auto; /* Agrega un desplazamiento vertical si el contenido excede la altura máxima */
+    width: 50%; /* Define el ancho de la tabla */
+    margin: 0 auto; /* Centra la tabla horizontalmente en el contenedor */
+    display: inline-block; /* Asegura que la tabla se comporte como un bloque en línea */
+    border-collapse: collapse; /* Colapsa los bordes de la tabla para un aspecto más limpio */
+}
+
+/* Estilo para las celdas de la tabla */
+#transactions-table td, #transactions-table th {
+    border: 1px solid #ddd; /* Añade bordes a las celdas */
+    padding: 8px; /* Añade relleno a las celdas */
+    text-align: left; /* Alinea el texto a la izquierda dentro de las celdas */
+}
+
+/* Estilo para las filas impares de la tabla */
+#transactions-table tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Cambia el color de fondo de las filas impares */
+}
+
+/* Alinea las tablas a la izquierda en dispositivos de pantalla grande */
+@media only screen and (min-width: 768px) {
+    #transactions-table {
+        float: left;
+    }
+}
+/* Estilo para el contenedor del gráfico */
+#chart-container {
+    width: 20%; /* Reducir el ancho del contenedor del gráfico */
+    float: center; /* Alinear el contenedor del gráfico a la izquierda */
+    margin-top: 200px; /* Eliminar el espacio superior */
+    max-height: 400px; /* Establecer una altura máxima para el contenedor del gráfico */
+    height: auto; /* Permitir que la altura del contenedor se ajuste automáticamente al contenido */
+}
+
+/* Estilo para el canvas del gráfico */
+#comparison-chart {
+    display: block; /* Asegurar que el canvas se comporte como un bloque */
+    width: 100%; /* Ocupar todo el ancho del contenedor */
+    height: auto; /* Permitir que la altura del gráfico se ajuste automáticamente */
+}
+/* Estilo para los botones */
+button {
+    background-color: #4CAF50; /* Color de fondo */
+    border: none; /* Sin borde */
+    color: white; /* Color del texto */
+    padding: 10px 20px; /* Espaciado interno */
+    text-align: center; /* Alineación del texto */
+    text-decoration: none; /* Sin decoración de texto */
+    display: block; /* Convertir a bloque */
+    font-size: 16px; /* Tamaño de fuente */
+    margin: 10px auto; /* Margen exterior (centrado horizontalmente) */
+    cursor: pointer; /* Cursor al pasar sobre el botón */
+    border-radius: 4px; /* Bordes redondeados */
+    position: absolute; /* Posicionamiento absoluto */
+}
+
+/* Estilo para el botón de logout */
+#profile-btn {
+    background-color: #f44336; /* Color de fondo rojo */
+    right: 20px; /* Ajuste hacia la derecha */
+    top: 20px; /* Ajuste hacia abajo */
+}
+
+/* Estilo para el botón de perfil */
+#logout-btn {
+    background-color: #008CBA; /* Color de fondo azul */
+    right: 20px; /* Ajuste hacia la derecha */
+    top: 70px; /* Ajuste hacia abajo */
+}
