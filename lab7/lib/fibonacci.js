@@ -1,4 +1,4 @@
-function generateFibonacci(n) {
+const generateFibonacci = (n) => {
     if (n <= 0) return [];
 
     const fibSeries = [0, 1];
@@ -9,6 +9,6 @@ function generateFibonacci(n) {
     }
 
     return fibSeries.slice(0, n);
-}
+};
 
 module.exports = generateFibonacci;
